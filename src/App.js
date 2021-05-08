@@ -13,8 +13,9 @@ function App() {
 
 
   function Downcount() {
-    setColor(false);
     setCount(count - 1);
+    setColor(false);
+
 
   }
 
