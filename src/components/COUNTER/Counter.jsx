@@ -35,6 +35,7 @@ function Counter() {
             <button onClick={Downcount} className={downcolor ? 'btndowncount btn' : ''}>Downcounter</button><br />
             <button onClick={Reset} className={reset ? 'btnreset btn' : ''}>Reset</button>
         </div>
+
     );
 }
 
