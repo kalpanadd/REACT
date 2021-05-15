@@ -9,20 +9,29 @@ function Signin() {
         password: '',
         phonenumber: ''
     });
-    const { firstname, lastname, emailid, password, phonenumber } = state
+
 
     function handleChange(e) {
-        setState(e.target.name = e.target.value);
-        console.log(state)
-
-
+        const field = e.target.name;
+        const value = e.target.value;
+        console.log(field, value);
+        setState({ ...state, [field]: value })
     }
+
 
     function handleSubmit(e) {
-        alert({ firstname, lastname, emailid, password, phonenumber });
-        e.prevenDefault();
+
+        e.preventDefault();
+
+        const registered = { ...state, id: new Date().getTime().toString() };
+
+
+        console.log(registered);
+        setState({ firstname: "", lastname: "", emailid: "", password: "", phonenumber: "" })
 
     }
+
+
     const formfields = {
         padding: "7px",
         width: '250px',
@@ -47,6 +56,10 @@ function Signin() {
                 <input type='submit' />
             </form>
 
+            <div>
+
+
+            </div>
         </div>
     )
 }
