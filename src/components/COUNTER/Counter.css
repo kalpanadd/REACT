@@ -1,3 +1,7 @@
+.counttitle{
+  font-family: Lobster, cursive;
+
+}
 .btn{
     font-family: Lobster,cursive;
     font-size: medium;
@@ -11,16 +15,18 @@
   
   .btn-upcount{
     background-color:deepskyblue;
-   
+    box-shadow: 5px 5px green;
   
   }
   
   .btndowncount{
     background-color:chartreuse;
-    
+    box-shadow: 5px 5px rgb(221, 90, 14);
+
   
   }
   .btnreset{
     background-color: red;
-    
+    box-shadow: 5px 5px blueviolet;
+
   }

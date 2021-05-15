@@ -29,7 +29,7 @@ function Counter() {
     }
     return (
         <div className="App">
-            <h3>The count is:{count}</h3>
+            <h3 className='counttitle'>The count is:{count}</h3>
             <br />
             <button onClick={Upcount} className={upcolor ? 'btn-upcount btn' : ''}>Upcounter</button><br />
             <button onClick={Downcount} className={downcolor ? 'btndowncount btn' : ''}>Downcounter</button><br />
