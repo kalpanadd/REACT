@@ -7,6 +7,7 @@ import Todo from './components/TOdo/Todo';
 import Todo1 from './components/TOdo/Todo1';
 import Greeting from './components/Conditional rendering/If-else';
 import Conditional from './components/Conditional rendering/Conditional';
+import Imagerendering from './components/Imagerendering/Imagerendering';
 function App() {
 
 
@@ -24,7 +25,8 @@ function App() {
 
       {/*<Greeting />*/}
 
-      <Conditional />
+      {/*<Conditional />*/}
+      <Imagerendering />
 
     </div>
   );
