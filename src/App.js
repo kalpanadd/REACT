@@ -5,6 +5,8 @@ import Form from './components/FORMS/Form';
 import Signin from './components/FORMS/Signin';
 import Todo from './components/TOdo/Todo';
 import Todo1 from './components/TOdo/Todo1';
+import Greeting from './components/Conditional rendering/If-else';
+import Conditional from './components/Conditional rendering/Conditional';
 function App() {
 
 
@@ -18,7 +20,11 @@ function App() {
 
       {/*<Todo />*/}
 
-      <Todo1 />
+      {/*<Todo1 />*/}
+
+      {/*<Greeting />*/}
+
+      <Conditional />
 
     </div>
   );
