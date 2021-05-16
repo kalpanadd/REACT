@@ -11,6 +11,7 @@ import Imagerendering from './components/Imagerendering/Imagerendering';
 import Using from './components/Using/Using';
 import Api from './components/Api/Api';
 import TodosApi from './components/Api/TodoApi';
+import Pictures from './components/Api/Pictures';
 function App() {
 
   {/*const [show, setShow] = useState(false);*/ }
@@ -39,8 +40,9 @@ function App() {
 
       {/* <Api />*/}
 
-      <TodosApi />
+      {/*<TodosApi />*/}
 
+      <Pictures />
 
 
     </div>
