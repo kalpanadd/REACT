@@ -9,9 +9,10 @@ import Greeting from './components/Conditional rendering/If-else';
 import Conditional from './components/Conditional rendering/Conditional';
 import Imagerendering from './components/Imagerendering/Imagerendering';
 import Using from './components/Using/Using';
+import Api from './components/Api/Api';
 function App() {
 
-  const [show, setShow] = useState(false);
+  {/*const [show, setShow] = useState(false);*/ }
 
   return (
     <div className='App'>
@@ -31,9 +32,11 @@ function App() {
       {/*<Imagerendering />*/}
 
 
-      <button onClick={() => setShow(true)}>count</button>
+      {/*<button onClick={() => setShow(true)}>count</button>
 
-      {show && <Using />}
+  {show && <Using />}*/}
+
+      <Api />
 
 
 
