@@ -10,6 +10,7 @@ import Conditional from './components/Conditional rendering/Conditional';
 import Imagerendering from './components/Imagerendering/Imagerendering';
 import Using from './components/Using/Using';
 import Api from './components/Api/Api';
+import TodosApi from './components/Api/TodoApi';
 function App() {
 
   {/*const [show, setShow] = useState(false);*/ }
@@ -36,7 +37,9 @@ function App() {
 
   {show && <Using />}*/}
 
-      <Api />
+      {/* <Api />*/}
+
+      <TodosApi />
 
 
 
