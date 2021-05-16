@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './App.css';
 import Counter from './components/COUNTER/Counter';
 import Form from './components/FORMS/Form';
@@ -8,8 +8,10 @@ import Todo1 from './components/TOdo/Todo1';
 import Greeting from './components/Conditional rendering/If-else';
 import Conditional from './components/Conditional rendering/Conditional';
 import Imagerendering from './components/Imagerendering/Imagerendering';
+import Using from './components/Using/Using';
 function App() {
 
+  const [show, setShow] = useState(false);
 
   return (
     <div className='App'>
@@ -26,7 +28,14 @@ function App() {
       {/*<Greeting />*/}
 
       {/*<Conditional />*/}
-      <Imagerendering />
+      {/*<Imagerendering />*/}
+
+
+      <button onClick={() => setShow(true)}>count</button>
+
+      {show && <Using />}
+
+
 
     </div>
   );
