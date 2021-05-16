@@ -4,6 +4,7 @@ import Counter from './components/COUNTER/Counter';
 import Form from './components/FORMS/Form';
 import Signin from './components/FORMS/Signin';
 import Todo from './components/TOdo/Todo';
+import Todo1 from './components/TOdo/Todo1';
 function App() {
 
 
@@ -15,8 +16,9 @@ function App() {
 
       {/*<Signin />*/}
 
-      <Todo />
+      {/*<Todo />*/}
 
+      <Todo1 />
 
     </div>
   );
