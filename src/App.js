@@ -12,6 +12,7 @@ import Using from './components/Using/Using';
 import Api from './components/Api/Api';
 import TodosApi from './components/Api/TodoApi';
 import Pictures from './components/Api/Pictures';
+import Flexbox from './Flexbox/Flexbox';
 function App() {
 
   {/*const [show, setShow] = useState(false);*/ }
@@ -42,8 +43,9 @@ function App() {
 
       {/*<TodosApi />*/}
 
-      <Pictures />
+      {/*<Pictures />*/}
 
+      <Flexbox />
 
     </div>
   );
