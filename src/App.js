@@ -44,7 +44,8 @@ function App() {
       {/*<TodosApi />*/}
 
       {/*<Pictures />*/}
-      <NewTodo />
+      {/*<NewTodo />*/}
+
 
 
     </div>
