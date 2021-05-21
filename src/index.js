@@ -1,9 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import NewTodo from './Todo-editing/NewTodo';
+import App from './App';
+//import NewTodo from './Todo-editing/NewTodo';
 
 ReactDOM.render(
-  <NewTodo />,
+  <App />,
   document.getElementById('root')
 );
 
