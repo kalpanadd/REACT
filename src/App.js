@@ -36,13 +36,13 @@ function App() {
 
       {/*<button onClick={() => setShow(true)}>count</button>
 
-  {show && <Using />}*/}
+      {show && <Using />}*/}
 
       {/* <Api />*/}
 
       {/*<TodosApi />*/}
 
-      <Pictures />
+      {/*<Pictures />*/}
 
 
     </div>
