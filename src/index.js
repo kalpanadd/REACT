@@ -1,11 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-//import App from './App';
+import App from './App';
 //import NewTodo from './Todo-editing/NewTodo';
-import App2 from './Basics/App2';
+//import App2 from './Basics/App2';
 
 ReactDOM.render(
-  <App2 />,
+  <App />,
   document.getElementById('root')
 );
 

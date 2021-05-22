@@ -1,3 +1,4 @@
+//props and props destructuring
 import React from 'react'
 import './Welcome.css'
 
@@ -26,11 +27,15 @@ export default Welcome*/
 export default Welcome*/
 
 
+//as this fn definately expects props as parameters hence directly destructuring
 
-function Welcome({ firstname, lastname, occupation, age }) { //as this fn definately expects props as parameters hence directly destructuring
+
+function Welcome(props) {
+    console.log(props);
+    const { firstname, lastname, age, occupation, id } = props
     return (
         <div className='welcomediv'>
-            <p>welcome to {firstname} {lastname} aged {age} who is {occupation}</p>
+            <p key={id}>welcome to {firstname} {lastname} aged {age} who is {occupation}</p>
         </div>
     )
 }
