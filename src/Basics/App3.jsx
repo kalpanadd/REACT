@@ -1,8 +1,96 @@
 import React from 'react'
 import Welcome from './Welcome';
 
+//probably this data might be coming from backend or api
+const employeeData = [
+    {
+        firstname: "john",
+        lastname: "ducket",
+        occupation: "doctor",
+        age: 44,
+        id: 1
+
+    },
+
+    {
+        firstname: "malinga",
+        lastname: "andrews",
+        occupation: "nurser",
+        age: 40,
+        id: 2
+
+    },
+    {
+        firstname: "salmon",
+        lastname: "joseph",
+        occupation: "engineer",
+        age: 48,
+        id: new Date().getTime().toString()
+
+    },
+    {
+        firstname: "lenin",
+        lastname: "andrews",
+        occupation: "driver",
+        age: 34,
+        id: 4
+
+
+    },
+    {
+        firstname: "mac",
+        lastname: "edite",
+        occupation: "employee",
+        age: 54,
+        id: 5
+
+    },
+    {
+        firstname: "monique zen",
+        lastname: "zenithem",
+        occupation: "teacher",
+        age: 24,
+        id: 6
+
+    },
+    {
+        firstname: "elen",
+        lastname: "musking",
+        occupation: "professor",
+        age: 34,
+        id: 7
+
+    },
+    {
+        firstname: "reeta",
+        lastname: "ducket",
+        occupation: "dietician",
+        age: 24,
+        id: 8
+
+    }
+]
+
+
 function App3() {
-    return (  //generally here 13times same component rendered but if there are 100timess to render that time this copy paste approach wil not work hence mapping is used
+    return (
+        <div>
+            {employeeData.map((data) => {
+                const { firstname, lastname, occupation, age, id } = data;
+                return <Welcome firstname={firstname} lastname={lastname} occupation={occupation} age={age} id={id} />
+
+            })}
+
+        </div>
+    )
+}
+
+export default App3
+
+
+
+/*function App3() {
+    return (  //generally here 13times same component rendered but if there are 100timess to render that time this copy paste approach wil not workmost of the toimes this data comes from backend so may containe 100000s data may contain  hence mapping is useds
         <div>
             <Welcome firstname='joseph' lastname='andrews' occupation='painter' age='45' />
             <Welcome firstname='joseph2' lastname='andrews1' occupation='lawyer' age='40' />
@@ -21,4 +109,4 @@ function App3() {
     )
 }
 
-export default App3
+export default App3*/
