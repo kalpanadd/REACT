@@ -5,7 +5,7 @@ import React from 'react'
     console.log(props);
     return (
         <div>
-            <p key={id}>welcome to {props.firstname} {props.lastname} aged {props.age} who is {props.occupation}</p>
+            <p key={props.id}>welcome to {props.firstname} {props.lastname} aged {props.age} who is {props.occupation}</p>
         </div>
     )
 }
@@ -15,7 +15,7 @@ export default Welcome*/
 
 /*function Welcome(props) {
     console.log(props);
-    const { firstname, lastname, occupation, age } = props; // object destructuring
+    const { firstname, lastname, occupation, age ,id} = props; // object destructuring
     return (
         <div>
             <p key={id}>welcome to {firstname} {lastname} aged {age} who is {occupation}</p>
