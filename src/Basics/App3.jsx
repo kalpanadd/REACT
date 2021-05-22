@@ -72,7 +72,7 @@ const employeeData = [
 ]
 
 
-function App3() {
+/*function App3() {
     return (
         <div>
             {employeeData.map((data) => {
@@ -85,8 +85,23 @@ function App3() {
     )
 }
 
-export default App3
+export default App3*/
 
+
+//by using spread operator without even using destructuring in mapp
+function App3() {
+    return (
+        <div>
+            {employeeData.map((data) => {
+                return <Welcome {...data} />
+
+            })}
+
+        </div>
+    )
+}
+
+export default App3
 
 
 /*function App3() {
