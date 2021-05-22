@@ -14,6 +14,8 @@ import TodosApi from './components/Api/TodoApi';
 import Pictures from './components/Api/Pictures';
 import NewTodo from './Todo-editing/NewTodo';
 import App2 from './Basics/App2';
+import App3 from './Basics/App3';
+
 function App() {
 
   {/*const [show, setShow] = useState(false);*/ }
@@ -47,7 +49,9 @@ function App() {
       {/*<Pictures />*/}
       {/*<NewTodo />*/}
 
-      <App2 />
+      {/*<App2 />*/}
+
+      <App3 />
 
 
     </div>
