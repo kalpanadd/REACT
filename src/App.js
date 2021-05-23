@@ -16,6 +16,7 @@ import NewTodo from './Todo-editing/NewTodo';
 import App2 from './Basics/App2';
 import App3 from './Basics/App3';
 import Maps from './Basics/Maps_and_looping/Maps';
+import Maps2 from './Basics/Maps_and_looping/Maps2';
 function App() {
 
   {/*const [show, setShow] = useState(false);*/ }
@@ -53,7 +54,11 @@ function App() {
 
       {/*<App3 />*/}
 
-      <Maps />
+      {/*<Maps />*/}
+
+      <Maps2 />
+
+
 
 
     </div>
