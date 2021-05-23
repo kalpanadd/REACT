@@ -44,7 +44,7 @@ export default Maps2*/
 
 
 //destructuring inside map method
-function Maps2() {
+/*function Maps2() {
     return (
         <div>
             {employees.map((emp) => {
@@ -53,6 +53,20 @@ function Maps2() {
                     <h1>{name}</h1>
                 )
             })}
+        </div>
+    )
+}
+
+export default Maps2*/
+
+//shorthand
+function Maps2() {
+    return (
+        <div>
+            {employees.map((emp) =>
+
+                <h1>{emp.name}</h1>
+            )}
         </div>
     )
 }
