@@ -94,7 +94,7 @@ export default Maps2*/
 
 
 //always parent element expects key property otherwise we get error in console
-function Maps2() {
+/*function Maps2() {
     return (
         <div>
             {employees.map((emp) => {
@@ -102,6 +102,26 @@ function Maps2() {
                     <div key={emp.id}>
                         <h1>{emp.name}</h1>
                         <h6>{emp.id}</h6>
+                    </div>
+                )
+
+            })}
+        </div>
+    )
+}
+
+export default Maps2*/
+
+
+function Maps2() {
+    return (
+        <div>
+            {employees.map((emp) => {
+                const { name, id } = emp;  //object destructuring
+                return (
+                    <div key={id}>
+                        <h1>{name}</h1>
+                        <h6>{id}</h6>
                     </div>
                 )
 
