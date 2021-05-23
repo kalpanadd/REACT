@@ -2,7 +2,7 @@ import React from 'react'
 
 const employees = [
     {
-        name: 'teena',
+        name: 'teena1',
         id: '1'
     },
     {
@@ -27,12 +27,30 @@ const employees = [
     }
 ]
 
-function Maps2() {
+
+/*function Maps2() {
     return (
         <div>
             {employees.map((emp) => {
                 return (
                     <h1>{emp.name}</h1>
+                )
+            })}
+        </div>
+    )
+}
+
+export default Maps2*/
+
+
+//destructuring inside map method
+function Maps2() {
+    return (
+        <div>
+            {employees.map((emp) => {
+                const { name } = emp;
+                return (
+                    <h1>{name}</h1>
                 )
             })}
         </div>
