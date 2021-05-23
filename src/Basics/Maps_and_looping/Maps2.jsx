@@ -60,13 +60,32 @@ export default Maps2*/
 export default Maps2*/
 
 //shorthand
-function Maps2() {
+/*function Maps2() {
     return (
         <div>
             {employees.map((emp) =>
 
                 <h1>{emp.name}</h1>
             )}
+        </div>
+    )
+}
+
+export default Maps2*/
+
+
+function Maps2() {
+    return (
+        <div>
+            {employees.map((emp) => {
+                return (
+                    <>
+                        <h1>{emp.name}</h1>
+                        <h6>{emp.id}</h6>
+                    </>
+                )
+
+            })}
         </div>
     )
 }
