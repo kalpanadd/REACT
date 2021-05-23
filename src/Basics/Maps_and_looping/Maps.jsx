@@ -6,7 +6,8 @@ const employees = [
     'maggie',
     'leesa',
     'tina',
-    'neeta'
+    'neeta',
+    'vineela'
 ]
 
 /*function Maps() {      //here if there are 100s of data is there to display in realtime comes from backend hence below method will be used
@@ -25,7 +26,7 @@ const employees = [
 
 export default Maps*/
 
-function Maps() {     //we can't use forEch for this kind of looping, we use mapping method of array is used because map will return array in output hence it returns each here h1 nodes of arrays 
+/*function Maps() {     //we can't use forEch for this kind of looping, we use mapping method of array is used because map will return array in output hence it returns each here h1 nodes of arrays 
     return (
         <div>
             {employees.forEach((emp) => {
@@ -37,4 +38,18 @@ function Maps() {     //we can't use forEch for this kind of looping, we use map
     )
 }
 
+export default Maps*/
+
+
+function Maps() {     //mapping returns each time of array of items, here we don't use return statement as we are returning single jsx element
+    return (
+        <div>
+            {employees.map((emp) => (
+                <h1>{emp}</h1>
+            ))}
+        </div>
+    )
+}
+
 export default Maps
+
