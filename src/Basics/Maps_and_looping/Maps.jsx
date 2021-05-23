@@ -9,7 +9,7 @@ const employees = [
     'neeta'
 ]
 
-function Maps() {
+/*function Maps() {      //here if there are 100s of data is there to display in realtime comes from backend hence below method will be used
     return (
         <div>
             <h1>hello {employees[0]}</h1>
@@ -19,6 +19,20 @@ function Maps() {
             <h1>hello {employees[4]}</h1>
             <h1>hello {employees[5]}</h1>
 
+        </div>
+    )
+}
+
+export default Maps*/
+
+function Maps() {     //we can't use forEch for this kind of looping, we use mapping method of array is used because map will return array in output hence it returns each here h1 nodes of arrays 
+    return (
+        <div>
+            {employees.forEach((emp) => {
+                return (
+                    <h1>{emp}</h1>
+                )
+            })}
         </div>
     )
 }
