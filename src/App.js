@@ -17,6 +17,7 @@ import App2 from './Basics/App2';
 import App3 from './Basics/App3';
 import Maps from './Basics/Maps_and_looping/Maps';
 import Maps2 from './Basics/Maps_and_looping/Maps2';
+import ParentToChild from './Basics/Maps_and_looping/Parent.ToChild';
 function App() {
 
   {/*const [show, setShow] = useState(false);*/ }
@@ -56,7 +57,9 @@ function App() {
 
       {/*<Maps />*/}
 
-      <Maps2 />
+      {/*<Maps2 />*/}
+
+      <ParentToChild />
 
 
 
