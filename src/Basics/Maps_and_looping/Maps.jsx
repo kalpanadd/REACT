@@ -2,7 +2,7 @@ import React from 'react'
 
 const employees = [
     'lehey',
-    'aaniee',
+    'aaniee1',
     'maggie',
     'leesa',
     'tina',
@@ -40,8 +40,23 @@ export default Maps*/
 
 export default Maps*/
 
-
 function Maps() {     //mapping returns each time of array of items, here we don't use return statement as we are returning single jsx element
+    return (
+        <div>
+            {employees.map((emp) => {
+                return (
+                    <h1>{emp}</h1>
+                )
+            })}
+        </div>
+    )
+}
+
+export default Maps
+
+
+//shorthand method for returning--- squarely braces and return statement can be removed
+/*function Maps() {     //mapping returns each time of array of items, here we don't use return statement as we are returning single jsx element
     return (
         <div>
             {employees.map((emp) => (
@@ -51,5 +66,5 @@ function Maps() {     //mapping returns each time of array of items, here we don
     )
 }
 
-export default Maps
+export default Maps*/
 
