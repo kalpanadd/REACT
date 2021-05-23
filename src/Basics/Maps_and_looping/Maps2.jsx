@@ -74,7 +74,7 @@ export default Maps2*/
 export default Maps2*/
 
 
-function Maps2() {
+/*function Maps2() {
     return (
         <div>
             {employees.map((emp) => {
@@ -83,6 +83,26 @@ function Maps2() {
                         <h1>{emp.name}</h1>
                         <h6>{emp.id}</h6>
                     </>
+                )
+
+            })}
+        </div>
+    )
+}
+
+export default Maps2*/
+
+
+//always parent element expects key property otherwise we get error in console
+function Maps2() {
+    return (
+        <div>
+            {employees.map((emp) => {
+                return (
+                    <div key={emp.id}>
+                        <h1>{emp.name}</h1>
+                        <h6>{emp.id}</h6>
+                    </div>
                 )
 
             })}
