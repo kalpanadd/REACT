@@ -1,7 +1,6 @@
-import React, { useState } from 'react'
+import React from 'react'
 
-function CounterComponent() {
-    const [count, setCount] = useState(0)
+function CounterComponent({ count, setcount }) {
 
     return (
         <div>
