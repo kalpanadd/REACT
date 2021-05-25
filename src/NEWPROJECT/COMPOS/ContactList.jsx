@@ -1,6 +1,6 @@
-import React from 'react'
+//import React from 'react'
 
-function ContactList({ contactsss }) {
+/*function ContactList({ contactsss }) {
     return (
         <div>
             <div className='ui celled list'>
@@ -17,5 +17,32 @@ function ContactList({ contactsss }) {
         </div>
     )
 }
+
+export default ContactList*/
+
+import React, { Component } from 'react'
+
+class ContactList extends Component {
+
+    render() {
+
+        const renderList = this.props.contactsss.map((client) => {
+            return (
+                <div key={client.id}>
+                    <h4>{client.name}</h4>
+                    <h4>{client.email}</h4>
+                </div>
+            )
+        })
+
+
+        return (
+            <div>
+                {renderList}
+            </div>
+        )
+    }
+}
+
 
 export default ContactList
