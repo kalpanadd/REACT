@@ -1,26 +1,22 @@
-//import React from 'react'
+import React from 'react'
+import ContactCard from './ContactCard'
 
-/*function ContactList({ contactsss }) {
+function ContactList({ contactsss }) {  //destructuring
     return (
         <div>
             <div className='ui celled list'>
-                {contactsss.map((client) => {
-                    const { name, email, id } = client;
-                    return (
-                        <div key={id}>
-                            <h4>{name}</h4>
-                            <h5>{email}</h5>
-                        </div>
-                    )
-                })}
+                <ContactCard clientsss={contactsss} />
             </div>
         </div>
     )
 }
 
-export default ContactList*/
+export default ContactList
 
-import React, { Component } from 'react'
+
+
+//using class component and without destructuring
+/*import React, { Component } from 'react'
 
 class ContactList extends Component {
 
@@ -45,4 +41,4 @@ class ContactList extends Component {
 }
 
 
-export default ContactList
+export default ContactList*/
