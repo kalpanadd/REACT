@@ -6,7 +6,7 @@ import ContactList from './ContactList';
 
 function MockApp() {
     return (
-        <div>
+        <div className='ui container'>
             <Header />
             <AddContact />
             <ContactList />
