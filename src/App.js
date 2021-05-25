@@ -19,6 +19,7 @@ import Maps from './Basics/Maps_and_looping/Maps';
 import Maps2 from './Basics/Maps_and_looping/Maps2';
 import ParentToChild from './Basics/Maps_and_looping/Parent.ToChild';
 import App4 from './Redux/App4';
+import MockApp from './NEWPROJECT/COMPOS/MockApp';
 function App() {
 
   {/*const [show, setShow] = useState(false);*/ }
@@ -61,7 +62,10 @@ function App() {
       {/*<Maps2 />*/}
 
       {/*<ParentToChild />*/}
-      <App4 />
+
+      {/*<App4 />*/}
+
+      <MockApp />
 
 
 
