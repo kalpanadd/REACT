@@ -1,10 +1,18 @@
 import React from 'react'
 
-function ContactList() {
+function ContactList({ contactsss }) {
     return (
         <div>
             <div className='ui celled list'>
-                Contact List
+                {contactsss.map((client) => {
+                    const { name, email, id } = client;
+                    return (
+                        <div key={id}>
+                            <h4>{name}</h4>
+                            <h5>{email}</h5>
+                        </div>
+                    )
+                })}
             </div>
         </div>
     )
