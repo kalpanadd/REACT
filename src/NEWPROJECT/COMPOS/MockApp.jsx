@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react'
 import Header from './Header';
 import AddContact from './AddContact';
 import ContactList from './ContactList';
+
 import { uuid } from 'uuidv4';
 
 
@@ -37,6 +38,14 @@ function MockApp() {
 
     }
 
+    const removeContactHandler = (id) => {
+        const newContactList = contacts.filter((contact) => {
+            return contact.id !== id;
+        })
+
+        setContacts(newContactList);
+    }
+
     /*useEffect(() => {
         const retrieveContacts = JSON.parse(localStorage.getItem(LOCAL_STORAGE_KEY));
         if (retrieveContacts) {
@@ -58,7 +67,7 @@ function MockApp() {
         <div className='mockapp'>
             <Header />
             <AddContact addContactHandler={addContactHandlerrr} />
-            <ContactList contactsss={contacts} />
+            <ContactList contactsss={contacts} getContactId={removeContactHandler} />
         </div>
     )
 }

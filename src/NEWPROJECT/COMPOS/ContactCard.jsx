@@ -4,7 +4,7 @@ import DeleteIcon from '@material-ui/icons/Delete';
 
 import user from '../PICS/user.png'
 import './newstyles.css'
-class ContactList extends Component {
+class ContactCard extends Component {
 
     render() {
 
@@ -16,7 +16,7 @@ class ContactList extends Component {
                         <h4>{client.name}</h4>
                         <h4>{client.email}</h4>
 
-                        <span style={{ cursor: 'pointer' }}><DeleteIcon /></span>
+                        <button style={{ cursor: 'pointer' }} onClick={() => this.props.clickHandler(client.id)}><DeleteIcon /></button>
                     </div>
 
 
@@ -34,11 +34,11 @@ class ContactList extends Component {
 }
 
 
-export default ContactList
+export default ContactCard
 
 
 
-/*function ContactList({ contactsss }) {
+/*function ContactCard({ contactsss }) {
     return (
         <div>
             <div className='ui celled list'>

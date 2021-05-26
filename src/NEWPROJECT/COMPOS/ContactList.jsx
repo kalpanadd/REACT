@@ -2,11 +2,17 @@ import React from 'react'
 import ContactCard from './ContactCard'
 
 
-function ContactList({ contactsss }) {  //destructuring
+function ContactList({ contactsss, getContactId, id }) {  //destructuring
+    const deleteContactHandler = (id) => {
+        getContactId(id);
+
+    }
+
+
     return (
         <div>
             <div>
-                <ContactCard clientsss={contactsss} />
+                <ContactCard clientsss={contactsss} clickHandler={deleteContactHandler} />
             </div>
         </div>
     )
