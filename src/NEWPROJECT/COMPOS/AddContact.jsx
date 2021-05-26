@@ -7,6 +7,7 @@ class AddContact extends Component {
         email: "",
 
     };
+
     add = (e) => {
         e.preventDefault();
         if (this.state.name === "" && this.state.email === "") {
