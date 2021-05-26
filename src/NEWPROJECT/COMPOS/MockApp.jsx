@@ -26,11 +26,15 @@ function MockApp() {
         }
 
     ]*/
+    const addContactHandlerrr = (usercontacts) => {
+        console.log(usercontacts)
+
+    }
 
     return (
         <div className='ui container'>
             <Header />
-            <AddContact />
+            <AddContact addContactHandler={addContactHandlerrr} />
             <ContactList contactsss={contacts} />
         </div>
     )

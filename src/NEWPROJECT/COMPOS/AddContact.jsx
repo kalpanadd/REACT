@@ -15,6 +15,7 @@ class AddContact extends Component {
             return
         }
         console.log(this.state);
+        this.props.addContactHandler(this.state);
     }
 
     render() {
