@@ -28,6 +28,8 @@ function MockApp() {
     ]*/
     const addContactHandlerrr = (usercontacts) => {
         console.log(usercontacts)
+        setContacts([...contacts, usercontacts])
+        console.log(contacts);
 
     }
 
