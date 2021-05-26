@@ -2,6 +2,7 @@
 import React, { Component } from 'react'
 import DeleteIcon from '@material-ui/icons/Delete';
 
+import user from '../PICS/user.png'
 class ContactList extends Component {
 
     render() {
@@ -9,8 +10,12 @@ class ContactList extends Component {
         const renderList = this.props.clientsss.map((client) => {
             return (
                 <div key={client.id}>
-                    <h4>{client.name}</h4>
-                    <h4>{client.email}</h4>
+                    <div>
+                        <img src={user} style={{ width: 30 }} />
+                        <h4>{client.name}</h4>
+                        <h4>{client.email}</h4>
+                    </div>
+
                     <button style={{ cursor: 'pointer' }}><DeleteIcon /></button>
 
                 </div>
