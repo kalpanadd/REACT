@@ -5,7 +5,7 @@ import AddContact from './AddContact';
 import ContactList from './ContactList';
 
 import { uuid } from 'uuidv4';
-
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 
 function MockApp() {
 
@@ -65,11 +65,24 @@ function MockApp() {
 
     return (
         <div className='mockapp'>
-            <Header />
-            <AddContact addContactHandler={addContactHandlerrr} />
-            <ContactList contactsss={contacts} getContactId={removeContactHandler} />
+            <Router>
+
+                <Header />
+
+                <Switch>
+                    <Route path='/add' component={() => (<AddContact addContactHandler={addContactHandlerrr} />)} />
+                    <Route path='/' exact component={() => (<ContactList contactsss={contacts} getContactId={removeContactHandler} />)} />
+
+                </Switch>
+
+
+            </Router>
         </div>
     )
 }
+
+{/*</Switch><AddContact addContactHandler={addContactHandlerrr} />
+<ContactList contactsss={contacts} getContactId={removeContactHandler} />*/}
+
 
 export default MockApp

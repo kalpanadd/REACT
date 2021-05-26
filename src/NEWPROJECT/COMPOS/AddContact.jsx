@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import './newstyles.css';
 
+import { Link } from 'react-router-dom';
+
 class AddContact extends Component {
 
     state = {
@@ -24,6 +26,9 @@ class AddContact extends Component {
         return (
             <div className='ui main'>
                 <h2 className='button-div'>Add Contact</h2>
+                <Link to='/add'>
+                    <button>Add contact</button>
+                </Link>
                 <form className='ui form' onSubmit={this.add}>
 
                     <div className='button-div'>
