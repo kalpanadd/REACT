@@ -1,10 +1,11 @@
 import React from 'react'
 import ContactCard from './ContactCard'
 
+
 function ContactList({ contactsss }) {  //destructuring
     return (
         <div>
-            <div className='ui celled list'>
+            <div>
                 <ContactCard clientsss={contactsss} />
             </div>
         </div>

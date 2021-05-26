@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import './newstyles.css';
 
 class AddContact extends Component {
 
@@ -22,29 +23,31 @@ class AddContact extends Component {
     render() {
         return (
             <div className='ui main'>
-                <h2>Add Contact</h2>
+                <h2 className='button-div'>Add Contact</h2>
                 <form className='ui form' onSubmit={this.add}>
 
-                    <div className='field'>
-                        <label>Name</label>
+                    <div className='button-div'>
+                        <label>Name:</label><br />
                         <input type='text'
+                            className='inputfield'
                             name='name'
                             placeholder='Name'
                             value={this.state.name}
                             onChange={(e) => this.setState({ name: (e.target.value) })} />
                     </div><br />
 
-                    <div className='field'>
-                        <label>Email</label>
+                    <div className='button-div'>
+                        <label>Email:</label><br />
                         <input type='text'
+                            className='inputfield'
                             name='email'
                             placeholder='Email'
                             value={this.state.email}
                             onChange={(e) => this.setState({ email: (e.target.value) })} />
                     </div><br />
 
-                    <div>
-                        <button className='ui button blue'>Add</button>
+                    <div className='button-div'>
+                        <button className='ui-button'>Add</button>
                     </div>
 
                 </form>

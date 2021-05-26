@@ -34,7 +34,7 @@ function MockApp() {
     }
 
     return (
-        <div className='ui container'>
+        <div className='mockapp'>
             <Header />
             <AddContact addContactHandler={addContactHandlerrr} />
             <ContactList contactsss={contacts} />
