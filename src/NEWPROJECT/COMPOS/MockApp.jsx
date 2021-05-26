@@ -3,6 +3,8 @@ import React, { useEffect, useState } from 'react'
 import Header from './Header';
 import AddContact from './AddContact';
 import ContactList from './ContactList';
+import { uuid } from 'uuidv4';
+
 
 function MockApp() {
 
@@ -30,7 +32,7 @@ function MockApp() {
     ]*/
     const addContactHandlerrr = (usercontacts) => {
         console.log(usercontacts)
-        setContacts([...contacts, usercontacts])
+        setContacts([...contacts, { id: uuid(), ...usercontacts }])
         console.log(contacts);
 
     }
